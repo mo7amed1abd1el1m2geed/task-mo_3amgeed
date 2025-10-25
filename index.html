@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عيادة د. حمبولة | ابتسامتك أحلى</title>
+  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="main-header">
+    <a href="#" class="logo">
+      <img src="LOGO.png" alt="شعار العيادة">
+    </a>
+    <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">عن الدكتور</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#booking">احجز موعد</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>ابتسامتك أجمل مع <span>د. حمبولة</span></h1>
+      <p>عيادة أسنان متكاملة تقدم لك رعاية عالية الجودة في بيئة مريحة وآمنة.</p>
+      <a href="#booking" class="cta-btn">احجز موعدك الآن</a>
+    </div>
+  </section>
+
+  <!-- ===== About Doctor ===== -->
+  <section id="about" class="about-us">
+    <div class="container">
+      <div class="doctor-card">
+        <img src="images.jpeg" alt="دكتور حمبولة">
+        <div class="info">
+          <h2>د. حمبولة</h2>
+          <p class="title">استشاري تجميل الأسنان وزراعة الأسنان</p>
+          <p>خبرة أكثر من <strong>10 سنوات</strong> في تحسين الابتسامة باستخدام أحدث التقنيات العالمية.</p>
+          <ul class="qualifications">
+            <li><i class="fas fa-certificate"></i> ماجستير تجميل الأسنان – جامعة القاهرة</li>
+            <li><i class="fas fa-award"></i> عضو الجمعية المصرية لزراعة الأسنان</li>
+            <li><i class="fas fa-tooth"></i> تدريب معتمد في تكنولوجيا التبييض المتقدمة</li>
+          </ul>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>خدمات العيادة</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <i class="fas fa-tooth"></i>
+          <h3>تبييض الأسنان</h3>
+          <p>احصل على ابتسامة ناصعة بأحدث أجهزة التبييض الآمنة.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-teeth-open"></i>
+          <h3>تقويم الأسنان</h3>
+          <p>نقدم تقويم شفاف وتقليدي لتحسين شكل أسنانك بكل راحة.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-user-md"></i>
+          <h3>زراعة الأسنان</h3>
+          <p>حلول زراعة متقدمة لاستعادة ابتسامتك الطبيعية بشكل دائم.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-stethoscope"></i>
+          <h3>فحص دوري</h3>
+          <p>تابع صحة فمك وأسنانك بشكل منتظم مع فريقنا الطبي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Booking ===== -->
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <h2>احجز موعدك الآن</h2>
+      <form class="booking-form">
+        <div class="form-group">
+          <label>اسمك الكامل</label>
+          <input type="text" required>
+        </div>
+        <div class="form-group">
+          <label>رقم الهاتف أو البريد الإلكتروني</label>
+          <input type="text" required>
+        </div>
+        <div class="form-group">
+          <label>نوع الخدمة المطلوبة</label>
+          <select required>
+            <option>تبييض الأسنان</option>
+            <option>تقويم الأسنان</option>
+            <option>زراعة الأسنان</option>
+            <option>استشارة عامة</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>ملاحظات إضافية</label>
+          <textarea rows="4"></textarea>
+        </div>
+        <button type="submit">إرسال الحجز</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 جميع الحقوق محفوظة لعيادة د. حمبولة</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('main-nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
