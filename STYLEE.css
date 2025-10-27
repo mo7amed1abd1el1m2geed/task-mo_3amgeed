@@ -22,21 +22,20 @@ body {
   line-height: 1.8;
 }
 
-/* Header */
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6%;
+  padding: 0.8rem 6%;
   background: var(--white);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .logo img {
-  height: 60px;
+  height: 50px;
 }
 
 .main-nav ul {
@@ -50,6 +49,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+  font-size: larger;
 }
 
 .main-nav a:hover {
@@ -64,7 +64,6 @@ body {
   color: var(--blue);
 }
 
-/* Hero */
 .hero {
   height: 90vh;
   background: linear-gradient(rgba(0, 151, 219, 0.4), rgba(0, 151, 219, 0.4)),
@@ -107,7 +106,6 @@ body {
   color: #fff;
 }
 
-/* About Doctor */
 .about-us {
   background: var(--light-blue);
   padding: 5rem 0;
@@ -173,7 +171,6 @@ body {
   transform: scale(1.2);
 }
 
-/* Services */
 .services {
   padding: 5rem 0;
   background: var(--white);
@@ -210,7 +207,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Booking */
 .booking-section {
   padding: 5rem 0;
   background: var(--gray);
@@ -272,7 +268,6 @@ button:hover {
   background: var(--dark-blue);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 1rem;
@@ -280,7 +275,6 @@ button:hover {
   color: #fff;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .main-nav {
     display: none;
